@@ -22,7 +22,7 @@ function acme_session_install() {
   foreach ($terms as $term) {
     $new_term = Term::create([
       'name' => $term,
-      'vid' => acme_session_status,
+      'vid' => 'acme_session_status',
     ]);
 
     $new_term->save();
