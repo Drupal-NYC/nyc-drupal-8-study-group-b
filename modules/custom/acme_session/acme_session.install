@@ -1,0 +1,30 @@
+<?php
+/**
+ * @file
+ * Install file for acme_session module.
+ */
+
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_install().
+ */
+function acme_session_install() {
+  // Add initial default taxonomy terms to acme_session_status vocabulary.
+  $terms  = [
+    t("Submitted"),
+    t("Rejected"),
+    t("Accepted"),
+  ];
+
+  // Make sure that the acme_session_status vocabulary exists?
+
+  foreach ($terms as $term) {
+    $new_term = Term::create([
+      'name' => $term,
+      'vid' => 'acme_session_status',
+    ]);
+
+    $new_term->save();
+  }
+}

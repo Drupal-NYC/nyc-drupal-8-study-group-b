@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: Status
+vid: acme_session_status
+description: 'Session status (Submitted, Accepted, Rejected, etc)'
+hierarchy: 0
+weight: 0

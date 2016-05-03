@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.acme_session.body
+    - field.field.node.acme_session.field_acme_session_status
+    - field.field.node.acme_session.field_acme_speaker
+    - node.type.acme_session
+  module:
+    - text
+    - user
+id: node.acme_session.default
+targetEntityType: node
+bundle: acme_session
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_acme_session_status:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_acme_speaker:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }

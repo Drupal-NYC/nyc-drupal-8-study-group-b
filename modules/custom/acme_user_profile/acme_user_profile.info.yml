@@ -1,0 +1,11 @@
+name: 'ACME User Profile'
+description: 'Extends the Drupal Core user entity.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - image
+  - text
+  - user
+version: 8.x-1.0-beta1
+package: acme

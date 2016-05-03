@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: acme_speaker
-label: Acme Speaker
+label: 'ACME Speaker'
 weight: 3
 is_admin: null
 permissions: {  }

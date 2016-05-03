@@ -1,0 +1,14 @@
+name: Session
+description: 'Provides Session content type and related configuration. Use <em>sessions</em> for presentations for the event.'
+type: module
+core: 8.x
+dependencies:
+  - field
+  - menu_ui
+  - node
+  - path
+  - taxonomy
+  - text
+  - user
+version: 8.x-1.0-beta1
+package: acme

@@ -1,0 +1,8 @@
+name: 'ACME Bundle'
+description: 'Contains the featurized configuration bundle for ACME features and assignment plugin configurations.'
+type: module
+core: 8.x
+dependencies:
+  - features
+version: 8.x-1.0-beta1
+package: acme
