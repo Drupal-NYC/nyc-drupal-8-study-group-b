@@ -10,29 +10,20 @@
  */
 function acme_session_theme($existing, $type, $theme, $path) {
   return [
-    'views_view_unformatted__acme_session' => [
+    'views_view_unformatted__acme_sessions' => [
       'path' => $path . '/templates',
-      'file' => 'views-view-unformatted--acme-session.html.twig',
-      'base hook' => 'views_view',
-      'arguments' => [
+      'base hook' => 'views_view_unformatted',
+      'variables' => [
         'view' => NULL,
         'options' => NULL,
         'rows' => NULL,
         'title' => '',
        ],
-      'preprocess functions' => array(
+      'preprocess functions' => [
         'template_preprocess',
         'template_preprocess_views_view_unformatted',
-      ),
+      ],
     ]
   ];
 }
 
-/**
- * Implements hook_theme_registry_alter().
- */
-function acme_session_theme_registry_alter(&$theme_registry) {
-//  kint($theme_registry);
-//  dd($theme_registry);
-//  dpm($theme_registry);
-}
